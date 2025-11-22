@@ -29,6 +29,26 @@ const colors = {
   success: '#22c55e',
 } as const;
 
+const fontFamily = {
+  sans: {
+    regular: 'HostGrotesk_400Regular',
+    medium: 'HostGrotesk_500Medium',
+    semiBold: 'HostGrotesk_600SemiBold',
+  }
+} as const;
+
+const fontSize ={
+  xs: 12,
+  sm: 14,
+  base: 16,
+  lg: 20,
+  xl: 24,
+  '2xl': 28,
+  '3xl': 32,
+  '4xl': 36,
+  '5xl': 40,
+} as const;
+
 export const theme = {
-  colors,
+  colors, fontFamily, fontSize
 } as const;

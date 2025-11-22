@@ -1,0 +1,36 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import { theme } from './theme';
+import {
+  HostGrotesk_400Regular,
+  HostGrotesk_500Medium,
+  HostGrotesk_600SemiBold,
+  useFonts
+} from '@expo-google-fonts/host-grotesk'
+import { AppText } from './components/AppText';
+import { Greetings } from './screens/Greetings';
+
+export function App() {
+
+  const [ isFontsLoaded ] = useFonts({
+    HostGrotesk_400Regular,
+    HostGrotesk_500Medium,
+    HostGrotesk_600SemiBold,
+  });
+
+  if (!isFontsLoaded) {
+    return null;
+  }
+
+  return <Greetings />
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: theme.colors.blue[400],
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Host'
+  },
+});
