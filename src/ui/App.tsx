@@ -9,6 +9,7 @@ import {
 } from '@expo-google-fonts/host-grotesk'
 import { AppText } from './components/AppText';
 import { Greetings } from './screens/Greetings';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export function App() {
 
@@ -22,7 +23,11 @@ export function App() {
     return null;
   }
 
-  return <Greetings />
+  return (
+    <SafeAreaProvider>
+      <Greetings />
+    </SafeAreaProvider>
+  )
 }
 
 const styles = StyleSheet.create({
