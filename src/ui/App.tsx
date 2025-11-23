@@ -1,13 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { theme } from './theme';
+import { theme } from './styles/theme';
 import {
   HostGrotesk_400Regular,
   HostGrotesk_500Medium,
   HostGrotesk_600SemiBold,
   useFonts
 } from '@expo-google-fonts/host-grotesk'
-import { AppText } from './components/AppText';
 import { Greetings } from './screens/Greetings';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
@@ -32,7 +31,7 @@ export function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1, 
     backgroundColor: theme.colors.blue[400],
     alignItems: 'center',
     justifyContent: 'center',
