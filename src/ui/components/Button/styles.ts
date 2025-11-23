@@ -24,7 +24,7 @@ export const buttonStyles = createVariants({
       default: {
         paddingHorizontal: 24,
         paddingVertical: 14,
-        borderRadius: 6,
+        borderRadius: 10,
       },
        icon: {
         width: 48,
