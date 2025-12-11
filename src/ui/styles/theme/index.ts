@@ -25,7 +25,7 @@ const colors = {
     800: '#09090b',
     900: '#000000',
   },
-  error: '#ef4444',
+  error: '#ff0000',
   success: '#22c55e',
 } as const;
 

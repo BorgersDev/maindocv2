@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     width: 195,
     height: 60,
     resizeMode: 'contain',
+    marginTop: 20,
   },
   content: {
     alignItems: 'center',
@@ -21,9 +22,15 @@ export const styles = StyleSheet.create({
     maxWidth: 311,
   },
   ctaContainer: {
-    width: '100%',
+    flex: 1,
+    width: '90%',
     alignItems: 'center',
-    marginBottom: 32,
+    marginBottom: 120,
+    justifyContent: 'center',
+  },
+  inputContainer: {
+    gap: 6,
+    marginBottom: 16,
   },
   ctaContent: {
     width: '100%',

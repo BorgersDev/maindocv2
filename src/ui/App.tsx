@@ -10,6 +10,7 @@ import {
 import { Greetings } from './screens/Greetings';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+
 export function App() {
 
   const [ isFontsLoaded ] = useFonts({
@@ -23,9 +24,10 @@ export function App() {
   }
 
   return (
-    <SafeAreaProvider>
-      <Greetings />
-    </SafeAreaProvider>
+
+      <SafeAreaProvider>
+        <Greetings />
+      </SafeAreaProvider>
   )
 }
 
